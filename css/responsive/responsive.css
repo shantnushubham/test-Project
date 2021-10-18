@@ -1,0 +1,39 @@
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  background-color: red;
+  height: 10vh;
+  width: calc(100% / 3);
+  margin-right: 10px;
+}
+
+.flex-item h3 {
+  text-align: center;
+  margin: auto;
+  line-height: 10vh;
+}
+
+.flex-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .flex-item {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 10vh;
+  }
+
+  .flex-item:last-child {
+    margin-bottom: 0;
+  }
+}

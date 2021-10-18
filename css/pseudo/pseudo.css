@@ -1,0 +1,31 @@
+/* selector:pseudo-class {
+  property: value
+} */
+
+/* selector::pseudo-element {
+  property: value
+} */
+
+button.my-btn {
+  background-color: #3f8f4cd0;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+button.my-btn:hover {
+  background-color: darkgreen;
+}
+
+.my-para {
+  font-size: 20px;
+}
+
+.my-para::first-line {
+  font-size: 22px;
+  color: red;
+  text-transform: uppercase;
+}

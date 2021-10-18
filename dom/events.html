@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="xyz()">
+    <h1 id="myHeading">This is my heading!</h1>
+    <button onclick="onButtonClick()">Click Me to change text!</button>
+    <label>Enter first name:</label>
+    <input type="text" name="firstName" id="myInput" />
+    <h1
+      onmouseover="onMouseIncoming()"
+      onmouseout="onMouseOutgoing()"
+      style="background-color: red; color: white; padding: 10px"
+      id="myRedHeading"
+    >
+      This is a Events Video
+    </h1>
+
+    <button id="secondButton">This is second button</button>
+    <script>
+      function onInputChange() {
+        let inputElement = document.getElementById("myInput");
+        console.log(inputElement.value);
+      }
+
+      function onButtonClick() {
+        let heading = document.getElementById("myHeading");
+        heading.innerText = "I changed the text!";
+      }
+
+      function xyz() {
+        console.log("I am a function");
+      }
+
+      function onMouseIncoming() {
+        document.getElementById("myRedHeading").innerText =
+          "Mouse is over the element";
+      }
+
+      function onMouseOutgoing() {
+        document.getElementById("myRedHeading").innerText =
+          "Mouse is out of the element";
+      }
+
+      let secondButton = document.getElementById("secondButton");
+
+      secondButton.addEventListener("click", function () {
+        console.log("This is from addEventListener");
+      });
+
+      document
+        .getElementById("myInput")
+        .addEventListener("input", onInputChange);
+
+      window.addEventListener("resize", function () {
+        console.log("Window is resized");
+      });
+    </script>
+  </body>
+</html>

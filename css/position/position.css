@@ -1,0 +1,16 @@
+.selector {
+  /* position: static; */
+  /* position: relative; */
+  /* position: fixed; */
+  /* position: absolute; */
+  /* position: sticky; */
+}
+
+.sticky-el {
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: pink;
+  border: 3px solid red;
+}
+

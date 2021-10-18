@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="display.css" />
+    <title>Display Template</title>
+  </head>
+  <body>
+    <h1>This is to demonstrate the display property</h1>
+
+    <h1>This is display: block</h1>
+    <div>
+      This is a random paragraph.
+      <p style="display: block">Hello This is Me!</p>
+      This is a closing paragraph.
+    </div>
+
+    <h1>This is display: inline</h1>
+    <div>
+      This is a random paragraph.
+      <p style="display: inline">Hello This is Me!</p>
+      This is a closing paragraph.
+    </div>
+
+    <h1>This is display: none</h1>
+    <div>
+      This is a random paragraph.
+      <p style="display: none">Hello This is Me!</p>
+      This is a closing paragraph.
+    </div>
+
+    <h1>This is display: flex</h1>
+    <div style="display: flex">
+      <div>Child 1</div>
+      <div>Child 2</div>
+      <div>Child 3</div>
+    </div>
+
+    <h1>This is display: inline-block</h1>
+    <div>
+      This is a random paragraph.
+      <p style="display: inline-block; width: 50%">Hello This is Me!</p>
+      This is a closing paragraph.
+    </div>
+
+    <h1>This is display: flex</h1>
+    <div style="display: flex">
+      <div>Child 1</div>
+      <div>Child 2</div>
+      <div>Child 3
+        <div style="display: inline-flex">
+          <div>Grandchild1</div>
+          <div>Grandchild2</div>
+      </div>
+    </div>
+  </body>
+</html>

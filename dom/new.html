@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title id="titleId">Document</title>
+  </head>
+  <body>
+    <div id="myDiv">
+      <a href="www.google.com" id="myLink" class="my-tag">My Link</a>
+      <h1>My Header</h1>
+      <p id="myPara">Hello this is my paragraph.</p>
+
+      <button id="myBtn">My Button</button>
+      <form
+        name="myForm"
+        action="/anything.com"
+        onsubmit="return validateForm()"
+        method="POST"
+      >
+        First Name: <input type="text" name="firstName" /> Last Name:
+        <input type="text" name="lastName" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script>
+      function validateForm() {
+        let myForm = document.forms["myForm"];
+        let firstName = myForm["firstName"];
+        let lastName = myForm["lastName"];
+        if (firstName.value === "") {
+          lastName.required = true;
+          return false;
+        } else if (lastName.value === "") {
+          firstName.required = true;
+          return false;
+        }
+      }
+
+      let newParagraph = document.createElement("p");
+      let node = document.createTextNode("This is a new paragraph 2!");
+      newParagraph.appendChild(node);
+
+      let div = document.getElementById("myDiv");
+      let aTag = document.getElementById("myLink");
+      div.insertBefore(newParagraph, aTag);
+      // document.getElementById("myPara").remove()
+      // div.removeChild(document.getElementById("myPara"))
+
+      div.replaceChild(newParagraph, document.getElementById("myPara"));
+    </script>
+  </body>
+</html>

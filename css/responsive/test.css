@@ -1,0 +1,24 @@
+.myBlackBox {
+  background-color: black;
+  color: white;
+  height: 200px;
+  position: relative;
+}
+
+.myBottomLeftText {
+  position: absolute;
+  color: yellow;
+  bottom: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.row .row-child {
+  background-color: red;
+  width: 100px;
+  border: 1px solid black;
+}

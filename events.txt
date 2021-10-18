@@ -1,0 +1,18 @@
+Event is any user interaction with the web application
+We can execute any JavaScript code/function whenever an event occurs
+
+Examples of events:
+1. Clicking with mouse
+2. When the page has loaded
+3. When some input text has been modified
+4. When the user presses a key on the keyboard
+5. When we hover over a certain element on the page
+
+
+// Onchange only works when we are finished editing i.e. when we move out
+of text box or when we press enter
+// Oninput workd whenever we are trying to edit any value of an input element
+
+// onmousedown is triggered whenever the mouse is clicked over the HTML element
+// onmouseup is triggered whenever the mouse is released after Clicking
+// onclick is triggered then the mouse-click is completed

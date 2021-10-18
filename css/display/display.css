@@ -1,0 +1,12 @@
+.selector {
+  /* display: block; */
+  /* display: inline; */
+  /* display: none; */
+  /* display: flex; */
+  /* display: inline-block; */
+  /* display: inline-flex; */
+}
+
+p {
+  color: blue;
+}
